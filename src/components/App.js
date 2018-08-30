@@ -40,6 +40,7 @@ class App extends React.Component {
     })
   }
 
+  // This is actually wrong. State is mutated
   onAdoptPet = (e) => {
     let adoptedPet = this.state.pets.find((p) => {
       return (p.id === e)
